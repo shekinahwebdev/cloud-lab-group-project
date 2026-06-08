@@ -2,7 +2,7 @@
 
 This project is a collaborative effort by the Cloud Lab group, consisting of members from various backgrounds and expertise. The project aims to explore and develop innovative solutions in the field of cloud computing, leveraging the collective knowledge and skills of the group members. The project is hosted on GitHub, allowing for seamless collaboration and version control. The group utilizes various tools and technologies to facilitate communication and project management, including GitHub Issues, Pull Requests, and Discussions. The project is continuously evolving, with regular updates and contributions from all members. The group is committed to fostering a collaborative and inclusive environment, encouraging open communication and knowledge sharing among members.
 
-# Cloud Lab Group Project: Simple Static Website
+## Cloud Lab Group Project: Simple Static Website
 
 Welcome to the official repository for our **Cloud Computing Lab** group project. This repository contains the source code for a responsive, clean, and modern static website built collaboratively using Git and hosted globally using **GitHub Pages**.
 
@@ -68,18 +68,18 @@ https://github.com/shekinahwebdev/cloud-lab-group-project.git
 
 ```
 
-# Pull latest changes from the team
+### Pull latest changes from the team
 
 git pull origin main
 
-# Make your updates inside code files, then stage changes
+### Make your updates inside code files, then stage changes
 
 git add .
 
-# Commit with a clear description of your update
+### Commit with a clear description of your update
 
 git commit -m "Added [Your Name] bio information to about.html"
 
-# Push to the cloud repository
+### Push to the cloud repository
 
 git push origin main
