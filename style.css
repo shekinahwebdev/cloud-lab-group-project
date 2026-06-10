@@ -1,4 +1,25 @@
-/* Modern Reset & Base Styles */
+:root {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-header: #0f172a;
+  --bg-input: #f8fafc;
+  --bg-list-item: #f1f5f9;
+  --text-main: #1e293b;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --text-nav-link: #cbd5e1;
+  --text-course-title: #94a3b8;
+  --text-list-item: #334155;
+  --text-white: #ffffff;
+  --primary: #0f172a;
+  --primary-hover: #1e293b;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.15);
+  --border-light: #cbd5e1;
+  --shadow-card-1: rgba(0, 0, 0, 0.05);
+  --shadow-card-2: rgba(0, 0, 0, 0.03);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,18 +31,17 @@ body {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
   line-height: 1.7;
-  background-color: #f8fafc;
-  color: #1e293b;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   padding-bottom: 60px;
 }
 
-/* Header & Navigation */
 header {
-  background-color: #0f172a; /* Deep Slate Blue */
-  color: #ffffff;
+  background-color: var(--bg-header);
+  color: var(--text-white);
   padding: 30px 20px;
   text-align: center;
-  border-bottom: 4px solid #38bdf8; /* Bright Blue Border accent */
+  border-bottom: 4px solid var(--accent);
 }
 
 header h1 {
@@ -33,7 +53,7 @@ header h1 {
 
 .course-title {
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--text-course-title);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
@@ -44,7 +64,7 @@ nav {
 }
 
 nav a {
-  color: #cbd5e1;
+  color: var(--text-nav-link);
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
@@ -55,13 +75,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffffff;
-  background-color: #1e293b;
+  color: var(--text-white);
+  background-color: var(--primary-hover);
 }
 
 nav a.active {
-  background-color: #38bdf8;
-  color: #0f172a;
+  background-color: var(--accent);
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -70,16 +90,16 @@ main {
   max-width: 750px;
   margin: 40px auto;
   padding: 35px;
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 12px;
   box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    0 4px 6px -1px var(--shadow-card-1),
+    0 2px 4px -1px var(--shadow-card-2);
 }
 
 h2,
 h3 {
-  color: #0f172a;
+  color: var(--primary);
   margin-bottom: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -87,9 +107,10 @@ h3 {
 
 h2 {
   font-size: 1.6rem;
-  border-left: 4px solid #38bdf8;
+  border-left: 4px solid var(--accent);
   padding-left: 10px;
 }
+
 h3 {
   font-size: 1.25rem;
   margin-top: 25px;
@@ -97,39 +118,36 @@ h3 {
 
 p {
   margin-bottom: 20px;
-  color: #475569;
+  color: var(--text-muted);
 }
 
-/* Showcase Image */
 .project-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
   border-radius: 8px;
   margin: 20px 0;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px var(--shadow-card-1);
 }
 
-/* Team List Styles */
 .team-list {
   list-style: none;
   margin-top: 15px;
 }
 
 .team-list li {
-  background-color: #f1f5f9;
+  background-color: var(--bg-list-item);
   padding: 12px 16px;
   margin-bottom: 8px;
   border-radius: 6px;
-  color: #334155;
+  color: var(--text-list-item);
   font-size: 0.95rem;
 }
 
 .team-list strong {
-  color: #0f172a;
+  color: var(--primary);
 }
 
-/* Interactive Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -140,16 +158,16 @@ p {
 .contact-form label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #334155;
+  color: var(--text-list-item);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border-light);
   border-radius: 6px;
-  background-color: #f8fafc;
+  background-color: var(--bg-input);
   font-family: inherit;
   font-size: 0.95rem;
   transition: all 0.2s ease;
@@ -158,37 +176,46 @@ p {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #38bdf8;
-  background-color: #ffffff;
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  border-color: var(--accent);
+  background-color: var(--bg-card);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.course-title {
+  color: var(--text-course-title);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: -10px;
+}
+
+.course-title-small {
+  color: var(--accent);
 }
 
 button {
   padding: 12px 20px;
-  background-color: #0f172a;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-white);
   border: none;
   border-radius: 6px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  align-self: flex-start; /* Keeps button nicely sized instead of full-width */
+  align-self: flex-start;
 }
 
 button:hover {
-  background-color: #1e293b;
+  background-color: var(--primary-hover);
 }
 
-/* Footer styling */
 footer {
   text-align: center;
   padding: 30px;
   font-size: 0.85rem;
-  color: #64748b;
+  color: var(--text-light);
 }
 
-/* Responsive Optimization */
 @media (max-width: 600px) {
   main {
     margin: 20px 15px;
@@ -202,6 +229,6 @@ footer {
     margin: 5px;
   }
   button {
-    width: 100%; /* Forms take full screen width on phones */
+    width: 100%;
   }
 }
