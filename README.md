@@ -17,13 +17,13 @@ You can view our live deployed website here:
 
 We organized our team into specific roles to ensure a structured deployment and version control workflow:
 
-| Name                | GitHub Username | Project Role                  |
-| :------------------ | :-------------- | :---------------------------- |
-| **[Member 1 Name]** | `@[Username]`   | Group Leader                  |
-| **[Member 2 Name]** | `@[Username]`   | GitHub Repository Manager     |
-| **[Member 3 Name]** | `@[Username]`   | UI Designer / Content Creator |
-| **[Member 4 Name]** | `@[Username]`   | Frontend Developer            |
-| **[Member 5 Name]** | `@[Username]`   | QA Tester & Content Creator   |
+| Name                      | GitHub Username  | Project Role                                        |
+| :------------------------ | :--------------- | :-------------------------------------------------- |
+| **[Member 1 Name]**       | `@[Username]`    | Group Leader/Frontend Developer/Github Repo Manager |
+| **Stephen Emmahi Nartey** | `STEPHEN-EMMAHI` | Frontend Developer                                  |
+| **[Member 3 Name]**       | `@[Username]`    | UI Designer                                         |
+| **[Member 4 Name]**       | `@[Username]`    | Frontend Developer                                  |
+| **[Member 5 Name]**       | `@[Username]`    | QA Tester & Content Creator                         |
 
 ---
 
